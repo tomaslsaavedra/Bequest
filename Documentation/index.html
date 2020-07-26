@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Umaya - Documentation</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="../Umaya/assets/css/plugins.css" rel="stylesheet">
+		<link href="../Umaya/assets/css/style.css" rel="stylesheet">
+		<link href="css/prettify.css" rel="stylesheet">
+		<link href="css/theme.css" rel="stylesheet">
+	</head>
+
+	<body class="section-bg-light-1">
+		<div class="doc-nav">
+			<ul class="container">
+				<li><a href="#umaya">Umaya Documentation</a></li>
+				<li><a href="#html">1. HTML Structure</a></li>
+				<li><a href="#css">2. CSS files</a></li>
+				<li><a href="#javascript">3. JavaScript</a></li>
+				<li><a href="#credits">4. Credits</a></li>
+				<li><a href="#support">5. Support</a></li>
+			</ul>
+		</div>
+
+		<section id="umaya" class="doc-bg doc-margin">
+			<div class="container small padding-top-bottom-120">
+				<h2 class="headline-m text-center text-color-black">Umaya HTML5 Template Documentation</h2>
+				<p class="body-text-m text-center text-color-black margin-top-30">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/jinnagik" target="_blank" class="subtitle-medium text-color-red">here</a>. Thanks so much!</p>
+			</div>
+		</section>
+
+		<section id="html" class="padding-top-120 container">
+			<div class="padding-bottom-60 text-center">
+				<h4 class="headline-xs text-color-black">1. HTML Structure</h4>
+				<p class="body-text-s text-color-black margin-top-10">The body part of the Html file is divided in four main sections: header, nav, main and footer.</p>
+			</div>
+
+			<h4 class="headline-xxxs text-color-black">HEADER</h4>
+			<p class="body-text-s text-color-black">Header HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- header start --&gt;
+&lt;header class=&quot;fixed-header&quot;&gt;
+    &lt;!-- logo start --&gt;
+    &lt;div class=&quot;header-logo js-midnight-color js-headroom&quot;&gt;
+        &lt;div class=&quot;hidden-box&quot;&gt;
+            &lt;a href=&quot;index.html&quot; class=&quot;header-logo__box js-pointer-large js-animsition-link&quot;&gt;
+                &lt;img class=&quot;header-logo__img white&quot; src=&quot;assets/images/logo/logo-white.png&quot; alt=&quot;logo&quot;&gt;
+                &lt;img class=&quot;header-logo__img black&quot; src=&quot;assets/images/logo/logo-black.png&quot; alt=&quot;logo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- logo end --&gt;
+
+    &lt;!-- menu-icon start --&gt;
+    &lt;div class=&quot;menu-icon js-menu-open-close js-pointer-large js-midnight-color js-headroom&quot;&gt;
+        &lt;div class=&quot;menu-icon__box&quot;&gt;
+            &lt;span class=&quot;menu-icon__inner&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;menu-icon__close&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- menu-icon end --&gt;
+
+    &lt;!-- header-contact start --&gt;
+    &lt;div class=&quot;header-contact js-midnight-color&quot;&gt;
+        &lt;div class=&quot;header-contact__flex&quot;&gt;
+            &lt;div class=&quot;header-contact__anim&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;header-contact__btn vertical-text center js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;vertical-text__inner&quot;&gt;&lt;i class=&quot;far fa-comment-dots&quot;&gt;&lt;/i&gt; Get in touch&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- header-contact end --&gt;
+
+    &lt;!-- header-social start --&gt;
+    &lt;div class=&quot;header-social after-preloader-anim js-midnight-color&quot;&gt;
+        &lt;ul class=&quot;list list_center list_margin-30px hidden-box&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;anim-slide js-pointer-small&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;anim-slide tr-delay-02 js-pointer-small&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;anim-slide tr-delay-04 js-pointer-small&quot;&gt;
+                        &lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;anim-slide tr-delay-06 js-pointer-small&quot;&gt;
+                        &lt;i class=&quot;fab fa-behance&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;anim-slide tr-delay-08 js-pointer-small&quot;&gt;
+                        &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;anim-slide tr-delay-10 js-pointer-small&quot;&gt;
+                        &lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- header-social end --&gt;
+&lt;/header&gt;&lt;!-- header end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">NAV</h4>
+			<p class="body-text-s text-color-black">Nav HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- navigation start --&gt;
+&lt;nav class=&quot;nav-container lines-section black-lines js-dropdown-active-box&quot;&gt;
+    &lt;!-- lines-container start --&gt;
+    &lt;div class=&quot;lines-container black-lines&quot;&gt;
+        &lt;!-- dropdown close btn start --&gt;
+        &lt;div class=&quot;dropdown-close&quot;&gt;
+            &lt;div class=&quot;dropdown-close__inner js-dropdown-close js-pointer-large&quot;&gt;
+                &lt;span class=&quot;dropdown-close__arrow&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- dropdown close btn end --&gt;
+
+        &lt;!-- js-nav-slider-bg start --&gt;
+        &lt;div class=&quot;js-nav-slider-bg&quot;&gt;
+            &lt;!-- swiper-wrapper start --&gt;
+            &lt;div class=&quot;swiper-wrapper&quot;&gt;
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;div class=&quot;nav-slide-bg&quot; style=&quot;background-image:url(assets/images/projects/black-eyes/woman-in-black-tube-top-beside-woman-in-white-off-shoulder-3823424.jpg)&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;div class=&quot;nav-slide-bg&quot; style=&quot;background-image:url(assets/images/projects/drone/quadcopter-on-wooden-surface-1601217.jpg)&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;div class=&quot;nav-slide-bg&quot; style=&quot;background-image:url(assets/images/projects/knit-cap/man-wears-orange-knit-cap-and-shirt-2802601.jpg)&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;div class=&quot;nav-slide-bg&quot; style=&quot;background-image:url(assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg)&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;div class=&quot;nav-slide-bg&quot; style=&quot;background-image:url(assets/images/projects/hoop-earrings/woman-with-gold-colored-hoop-earrings-2420555.jpg)&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+            &lt;/div&gt;&lt;!-- swiper-wrapper end --&gt;
+        &lt;/div&gt;&lt;!-- js-nav-slider-bg end --&gt;
+
+        &lt;!-- menu-box start --&gt;
+        &lt;ul class=&quot;menu-box&quot;&gt;
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-dropdown-open&quot;&gt;
+                &lt;a class=&quot;nav-btn large dropdown-hidden-btn js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Home&quot;&gt;Home&lt;/span&gt;
+                &lt;/a&gt;
+
+                &lt;!-- dropdown start --&gt;
+                &lt;ul class=&quot;menu-box dropdown js-dropdown&quot;&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;home_creative-agency.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Creative agency&quot;&gt;Creative agency&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;home_interior-design.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Interior design&quot;&gt;Interior design&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;home_corporate.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Corporate&quot;&gt;Corporate&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;home_freelancer.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Freelancer&quot;&gt;Freelancer&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;home_musician.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Musician&quot;&gt;Musician&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- dropdown end --&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-dropdown-open&quot;&gt;
+                &lt;a class=&quot;nav-btn large dropdown-hidden-btn js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Pages&quot;&gt;Pages&lt;/span&gt;
+                &lt;/a&gt;
+
+                &lt;!-- dropdown start --&gt;
+                &lt;ul class=&quot;menu-box dropdown js-dropdown&quot;&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;pages_about-us.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;About us&quot;&gt;About us&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;pages_who-we-are.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Who we are&quot;&gt;Who we are&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;pages_what-we-do.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;What We Do&quot;&gt;What We Do&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;pages_agency.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Agency&quot;&gt;Agency&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;pages_services.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Services&quot;&gt;Services&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- dropdown end --&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-dropdown-open&quot;&gt;
+                &lt;a class=&quot;nav-btn large dropdown-hidden-btn js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Portfolio&quot;&gt;Portfolio&lt;/span&gt;
+                &lt;/a&gt;
+
+                &lt;!-- dropdown start --&gt;
+                &lt;ul class=&quot;menu-box dropdown js-dropdown&quot;&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_parallax.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Parallax&quot;&gt;Parallax&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_parallax-2.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Parallax 2&quot;&gt;Parallax 2&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_freemode.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Freemode&quot;&gt;Freemode&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_columns.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Columns&quot;&gt;Columns&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_columns-parallax.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Columns parallax&quot;&gt;Columns parallax&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_fade.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Fade&quot;&gt;Fade&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_fade-horizontal.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Fade horizontal&quot;&gt;Fade horizontal&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_horizontal-header.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Horizontal header&quot;&gt;Horizontal header&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- dropdown end --&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-dropdown-slider-open&quot;&gt;
+                &lt;a class=&quot;nav-btn large dropdown-hidden-btn js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Projects&quot;&gt;Projects&lt;/span&gt;
+                &lt;/a&gt;
+
+                &lt;!-- dropdown start --&gt;
+                &lt;div class=&quot;dropdown js-dropdown&quot;&gt;
+                    &lt;!-- js-nav-slider start --&gt;
+                    &lt;div class=&quot;js-nav-slider&quot;&gt;
+                        &lt;!-- swiper-wrapper start --&gt;
+                        &lt;ul class=&quot;swiper-wrapper&quot;&gt;
+                            &lt;!-- swiper-slide start --&gt;
+                            &lt;li class=&quot;nav-btn-box swiper-slide&quot;&gt;
+                                &lt;div class=&quot;hidden-box&quot;&gt;
+                                    &lt;a href=&quot;project_drone.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Black eyes&quot;&gt;Black eyes&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;&lt;!-- swiper-slide end --&gt;
+                            &lt;!-- swiper-slide start --&gt;
+                            &lt;li class=&quot;nav-btn-box swiper-slide&quot;&gt;
+                                &lt;div class=&quot;hidden-box&quot;&gt;
+                                    &lt;a href=&quot;project_drone.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Drone&quot;&gt;Drone&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;&lt;!-- swiper-slide end --&gt;
+                            &lt;!-- swiper-slide start --&gt;
+                            &lt;li class=&quot;nav-btn-box swiper-slide&quot;&gt;
+                                &lt;div class=&quot;hidden-box&quot;&gt;
+                                    &lt;a href=&quot;project_drone.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Knit cap&quot;&gt;Knit cap&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;&lt;!-- swiper-slide end --&gt;
+                            &lt;!-- swiper-slide start --&gt;
+                            &lt;li class=&quot;nav-btn-box swiper-slide&quot;&gt;
+                                &lt;div class=&quot;hidden-box&quot;&gt;
+                                    &lt;a href=&quot;project_drone.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Pexels&quot;&gt;Pexels&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;&lt;!-- swiper-slide end --&gt;
+                            &lt;!-- swiper-slide start --&gt;
+                            &lt;li class=&quot;nav-btn-box swiper-slide&quot;&gt;
+                                &lt;div class=&quot;hidden-box&quot;&gt;
+                                    &lt;a href=&quot;project_drone.html&quot; class=&quot;nav-btn small js-animsition-link js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Hoop earrings&quot;&gt;Hoop earrings&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;&lt;!-- swiper-slide end --&gt;
+                        &lt;/ul&gt;&lt;!-- swiper-wrapper end --&gt;
+
+                        &lt;!-- swiper-button-prev start --&gt;
+                        &lt;div class=&quot;swiper-button-prev-box&quot;&gt;
+                            &lt;div class=&quot;dropdown-slider-controls&quot;&gt;
+                                &lt;div class=&quot;swiper-button-prev black&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- swiper-button-prev end --&gt;
+                        &lt;!-- swiper-button-next start --&gt;
+                        &lt;div class=&quot;swiper-button-next-box&quot;&gt;
+                            &lt;div class=&quot;dropdown-slider-controls&quot;&gt;
+                                &lt;div class=&quot;swiper-button-next black&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- swiper-button-next end --&gt;
+
+                        &lt;!-- swiper-pagination start --&gt;
+                        &lt;div class=&quot;pagination-box&quot;&gt;
+                            &lt;div class=&quot;dropdown-slider-controls&quot;&gt;
+                                &lt;div class=&quot;swiper-pagination counter-pagination black&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- swiper-pagination end --&gt;
+                    &lt;/div&gt;&lt;!-- js-nav-slider end --&gt;
+                &lt;/div&gt;&lt;!-- dropdown end --&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-dropdown-open&quot;&gt;
+                &lt;a class=&quot;nav-btn large dropdown-hidden-btn js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Blog&quot;&gt;Blog&lt;/span&gt;
+                &lt;/a&gt;
+
+                &lt;!-- dropdown start --&gt;
+                &lt;ul class=&quot;menu-box dropdown js-dropdown&quot;&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;blog_sidebar.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Sidebar&quot;&gt;Sidebar&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;blog_grid.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Grid&quot;&gt;Grid&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;blog_sliders.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Sliders&quot;&gt;Sliders&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;blog_filter.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Filter&quot;&gt;Filter&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- dropdown end --&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box&quot;&gt;
+                &lt;a href=&quot;contact.html&quot; class=&quot;nav-btn large dropdown-hidden-btn js-animsition-link js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Contact&quot;&gt;Contact&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+        &lt;/ul&gt;&lt;!-- menu-box end --&gt;
+
+        &lt;!-- nav-information start --&gt;
+        &lt;div class=&quot;nav-information&quot;&gt;
+            &lt;!-- nav-email start --&gt;
+            &lt;div class=&quot;nav-email&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;div class=&quot;title-xxxxs text-bg-black padding-right-30 nav-reveal-anim js-nav-anim&quot;&gt;Email&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;nav-fade-anim js-nav-anim margin-top-10 margin-left-20&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;subtitle-xsmall text-height-14 text-color-6d6d6d text-hover-to-red js-pointer-small&quot;&gt;email@umaya_agency.com&lt;/a&gt;&lt;br&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;subtitle-xsmall text-height-14 text-color-6d6d6d text-hover-to-red js-pointer-small&quot;&gt;email@umaya_job.com&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- nav-email end --&gt;
+
+            &lt;!-- nav-address start --&gt;
+            &lt;div class=&quot;nav-address&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;div class=&quot;title-xxxxs text-bg-black padding-right-30 nav-reveal-anim js-nav-anim&quot;&gt;Address&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;nav-fade-anim js-nav-anim margin-top-10 margin-left-20&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;subtitle-xsmall text-height-14 text-color-6d6d6d text-hover-to-red js-pointer-small&quot;&gt;
+                        PO Box 223158 Oliver Street&lt;br&gt;
+                        East Victoria 2006 UK
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- nav-address end --&gt;
+
+            &lt;!-- nav-phone start --&gt;
+            &lt;div class=&quot;nav-phone&quot;&gt;
+                &lt;div class=&quot;hidden-box d-inline-block&quot;&gt;
+                    &lt;div class=&quot;title-xxxxs text-bg-black padding-right-30 nav-reveal-anim js-nav-anim&quot;&gt;Phone&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;nav-fade-anim js-nav-anim margin-top-10 margin-left-20&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;subtitle-xsmall text-height-14 text-color-6d6d6d text-hover-to-red js-pointer-small&quot;&gt;+23 8 8532 7834&lt;/a&gt;&lt;br&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;subtitle-xsmall text-height-14 text-color-6d6d6d text-hover-to-red js-pointer-small&quot;&gt;+23 8 9635 7335&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- nav-phone end --&gt;
+        &lt;/div&gt;&lt;!-- nav-information end --&gt;
+
+        &lt;!-- nav-copyright start --&gt;
+        &lt;div class=&quot;nav-copyright text-right&quot;&gt;
+            &lt;p class=&quot;title-small-thin text-color-black nav-fade-anim js-nav-anim&quot;&gt;
+                &copy; Copyright 2020 UMAYA. Template by &lt;a href=&quot;#&quot; class=&quot;text-weight-600 text-bg-black text-color-white padding-left-30&quot;&gt;Jinna Gik&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;&lt;!-- nav-copyright end --&gt;
+    &lt;/div&gt;&lt;!-- lines-container end --&gt;
+&lt;/nav&gt;&lt;!-- navigation end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">MAIN</h4>
+			<p class="body-text-s text-color-black">Main HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- main start --&gt;
+&lt;main class=&quot;js-animsition-overlay&quot; data-animsition-overlay=&quot;true&quot;&gt;
+    &lt;!-- home slider start --&gt;
+    &lt;section id=&quot;up&quot; class=&quot;lines-section anim-lines section-bg-dark-1 js-home-slider fullscreen-slider&quot;&gt;
+        &lt;!-- swiper-wrapper start --&gt;
+        &lt;div class=&quot;swiper-wrapper&quot;&gt;
+            &lt;!-- swiper-slide start --&gt;
+            &lt;div class=&quot;swiper-slide flex-min-height-100vh&quot;&gt;
+                &lt;!-- slide-bg --&gt;
+                &lt;div class=&quot;js-parallax-slide-bg bg-img-cover&quot; style=&quot;background-image:url(assets/images/projects/hoop-earrings/woman-with-gold-colored-hoop-earrings-2420555.jpg)&quot;&gt;&lt;/div&gt;
+                &lt;!-- bg-overlay --&gt;
+                &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+
+                &lt;!-- content start --&gt;
+                &lt;div class=&quot;flex-min-height-100vh__inner lines-container no-lines&quot; data-swiper-parallax-x=&quot;30%&quot;&gt;
+                    &lt;div class=&quot;container small text-center padding-top-bottom-120&quot;&gt;
+                        &lt;h2 class=&quot;title-xl text-height-10&quot;&gt;
+                            &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                &lt;span class=&quot;anim-slide tr-delay-02&quot;&gt;We generate&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                &lt;span class=&quot;anim-slide tr-delay-03&quot;&gt;creative &&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                &lt;span class=&quot;anim-slide tr-delay-04&quot;&gt;novation ideas&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/h2&gt;
+                        &lt;p class=&quot;subtitle-up margin-top-30 text-color-dadada anim-fade tr-delay-06&quot;&gt;Tote bag cornhole pork belly swag vexillologist godard.&lt;/p&gt;&lt;br&gt;
+                        &lt;div class=&quot;margin-top-30 anim-fade tr-delay-08&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;border-btn js-pointer-large&quot;&gt;
+                                &lt;span class=&quot;border-btn__inner&quot;&gt;Read more&lt;/span&gt;
+                                &lt;span class=&quot;border-btn__lines-1&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;border-btn__lines-2&quot;&gt;&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- content end --&gt;
+            &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+
+            &lt;!-- swiper-slide start --&gt;
+            &lt;div class=&quot;swiper-slide flex-min-height-100vh&quot;&gt;
+                &lt;!-- slide-bg --&gt;
+                &lt;div class=&quot;js-parallax-slide-bg bg-img-cover&quot; style=&quot;background-image:url(assets/images/projects/black-eyes/woman-in-black-tube-top-beside-woman-in-white-off-shoulder-3823424.jpg)&quot;&gt;&lt;/div&gt;
+                &lt;!-- bg-overlay --&gt;
+                &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+
+                &lt;!-- content start --&gt;
+                &lt;div class=&quot;flex-min-height-100vh__inner lines-container no-lines&quot; data-swiper-parallax-x=&quot;30%&quot;&gt;
+                    &lt;!-- width-100perc start --&gt;
+                    &lt;div class=&quot;width-100perc padding-top-bottom-120&quot;&gt;
+                        &lt;!-- container start --&gt;
+                        &lt;div class=&quot;container small&quot;&gt;
+                            &lt;h2 class=&quot;title-xl text-height-10 text-center&quot;&gt;
+                                &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                    &lt;span class=&quot;anim-slide tr-delay-02&quot;&gt;We’r Provided&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                    &lt;span class=&quot;anim-slide tr-delay-03&quot;&gt;&lt;span class=&quot;text-color-red&quot;&gt;Best&lt;/span&gt; Digital&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                    &lt;span class=&quot;anim-slide tr-delay-04 text-color-red&quot;&gt;Services&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/h2&gt;
+                        &lt;/div&gt;&lt;!-- container end --&gt;
+
+                        &lt;!-- flex-container start --&gt;
+                        &lt;div class=&quot;flex-container padding-top-50&quot;&gt;
+                            &lt;div class=&quot;four-columns column-50-100 padding-top-10&quot;&gt;
+                                &lt;span class=&quot;line-col-r-margin-20 hidden-box d-inline-block&quot;&gt;
+                                    &lt;span class=&quot;title-xxxs text-bg-red padding-right-30 anim-reveal tr-delay-02&quot;&gt;Creative team&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;four-columns column-50-100 padding-top-10&quot;&gt;
+                                &lt;span class=&quot;line-col-r-margin-20 hidden-box d-inline-block&quot;&gt;
+                                    &lt;span class=&quot;title-small-thin text-bg-black padding-right-30 anim-reveal tr-delay-04&quot;&gt;Innovation ideas&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;four-columns column-50-100 padding-top-10&quot;&gt;
+                                &lt;span class=&quot;line-col-r-margin-20 hidden-box d-inline-block&quot;&gt;
+                                    &lt;span class=&quot;title-small-thin text-bg-black padding-right-30 anim-reveal tr-delay-06&quot;&gt;Best services&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- flex-container end --&gt;
+                    &lt;/div&gt;&lt;!-- width-100perc end --&gt;
+                &lt;/div&gt;&lt;!-- content end --&gt;
+            &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+
+            &lt;!-- swiper-slide start --&gt;
+            &lt;div class=&quot;swiper-slide flex-min-height-100vh&quot;&gt;
+                &lt;!-- slide-bg --&gt;
+                &lt;div class=&quot;js-parallax-slide-bg bg-img-cover&quot; style=&quot;background-image:url(assets/images/projects/neon-lights/woman-holding-vinyl-record-2272854.jpg)&quot;&gt;&lt;/div&gt;
+                &lt;!-- bg-overlay --&gt;
+                &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+
+                &lt;!-- content start --&gt;
+                &lt;div class=&quot;flex-min-height-100vh__inner lines-container no-lines&quot; data-swiper-parallax-x=&quot;30%&quot;&gt;
+                    &lt;div class=&quot;container small text-center padding-top-bottom-120&quot;&gt;
+                        &lt;h2 class=&quot;title-xxs text-height-10 hidden-box d-inline-block&quot;&gt;
+                            &lt;span class=&quot;anim-reveal tr-delay-02 text-bg-red padding-left-right-50&quot;&gt;Welcome Umaya&lt;/span&gt;
+                        &lt;/h2&gt;
+                        &lt;h3 class=&quot;title-l text-height-10&quot;&gt;
+                            &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                &lt;span class=&quot;anim-slide tr-delay-03&quot;&gt;Best Solutions&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                &lt;span class=&quot;anim-slide tr-delay-04&quot;&gt;& ideas for&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class=&quot;hidden-box d-block&quot;&gt;
+                                &lt;span class=&quot;anim-slide tr-delay-05&quot;&gt;You Business&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/h3&gt;
+                        &lt;p class=&quot;subtitle-up margin-top-30 text-color-dadada anim-fade tr-delay-07&quot;&gt;Tote bag cornhole pork belly swag vexillologist godard.&lt;/p&gt;&lt;br&gt;
+                        &lt;div class=&quot;margin-top-30 anim-fade tr-delay-09&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;border-btn js-pointer-large&quot;&gt;
+                                &lt;span class=&quot;border-btn__inner&quot;&gt;Read more&lt;/span&gt;
+                                &lt;span class=&quot;border-btn__lines-1&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;border-btn__lines-2&quot;&gt;&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- content end --&gt;
+            &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+        &lt;/div&gt;&lt;!-- swiper-wrapper end --&gt;
+
+        &lt;!-- swiper-button-prev start --&gt;
+        &lt;div class=&quot;swiper-button-prev-box fullscreen-slider-arrow after-preloader-anim&quot;&gt;
+            &lt;div class=&quot;anim-fade&quot;&gt;
+                &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- swiper-button-prev end --&gt;
+        &lt;!-- swiper-button-next start --&gt;
+        &lt;div class=&quot;swiper-button-next-box fullscreen-slider-arrow after-preloader-anim&quot;&gt;
+            &lt;div class=&quot;anim-fade tr-delay-06&quot;&gt;
+                &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- swiper-button-next end --&gt;
+
+        &lt;!-- swiper-pagination start --&gt;
+        &lt;div class=&quot;pagination-box fullscreen-slider-pagination after-preloader-anim&quot;&gt;
+            &lt;div class=&quot;anim-fade tr-delay-03&quot;&gt;
+                &lt;div class=&quot;swiper-pagination counter-pagination&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- swiper-pagination end --&gt;
+
+        &lt;!-- lines-container --&gt;
+        &lt;div class=&quot;lines-container lines-pos-abs anim-lines&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;&lt;!-- home slider end --&gt;
+
+    ...
+
+&lt;/main&gt;&lt;!-- main end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">FOOTER</h4>
+			<p class="body-text-s text-color-black">Footer HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- footer start --&gt;
+&lt;footer class=&quot;fixed-footer lines-section bg-img-cover flex-min-height-100vh js-fixed-footer&quot; style=&quot;background-image:url(assets/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)&quot;&gt;
+    &lt;!-- bg-overlay --&gt;
+    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+    &lt;!-- lines-container start --&gt;
+    &lt;div class=&quot;lines-container no-lines flex-min-height-100vh__inner&quot;&gt;
+        &lt;!-- container start --&gt;
+        &lt;div class=&quot;container padding-top-bottom-120&quot;&gt;
+            &lt;!-- footer-logo start --&gt;
+            &lt;div class=&quot;footer-logo padding-bottom-90&quot;&gt;
+                &lt;img class=&quot;footer-logo__img&quot; src=&quot;assets/images/logo/logo-white.png&quot; alt=&quot;logo&quot;&gt;
+            &lt;/div&gt;&lt;!-- footer-logo end --&gt;
+
+            &lt;!-- flex-container start --&gt;
+            &lt;div class=&quot;flex-container flex-align-center&quot;&gt;
+                &lt;!-- column start --&gt;
+                &lt;div class=&quot;eight-columns&quot;&gt;
+                    &lt;h4 class=&quot;column-l-r-margin-10 title-xl text-height-10 footer-title&quot;&gt;
+                        The &lt;span class=&quot;text-color-red&quot;&gt;best&lt;br&gt;agency&lt;/span&gt; for&lt;br&gt;your businnes
+                    &lt;/h4&gt;
+                &lt;/div&gt;&lt;!-- column end --&gt;
+                &lt;!-- column start --&gt;
+                &lt;div class=&quot;four-columns footer-nav&quot;&gt;
+                    &lt;ul class=&quot;column-l-r-margin-10 list js-footer-hover-box&quot;&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;footer-nav__btn js-pointer-small js-footer-hover-link&quot;&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;footer-nav__btn js-pointer-small js-footer-hover-link&quot;&gt;About&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;footer-nav__btn js-pointer-small js-footer-hover-link&quot;&gt;Services&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;footer-nav__btn js-pointer-small js-footer-hover-link&quot;&gt;Portfolio&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;footer-nav__btn js-pointer-small js-footer-hover-link&quot;&gt;Blog&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;footer-nav__btn js-pointer-small js-footer-hover-link&quot;&gt;Contact&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;&lt;!-- column end --&gt;
+            &lt;/div&gt;&lt;!-- flex-container end --&gt;
+
+            &lt;!-- flex-container start --&gt;
+            &lt;div class=&quot;flex-container flex-justify-center padding-top-30&quot;&gt;
+                &lt;!-- column start --&gt;
+                &lt;div class=&quot;four-columns column-50-100 padding-top-60 footer-email&quot;&gt;
+                    &lt;div class=&quot;column-l-r-margin-10&quot;&gt;
+                        &lt;div class=&quot;title-xxxxs text-bg-red footer-info&quot;&gt;Email&lt;/div&gt;
+                        &lt;div class=&quot;margin-top-10 footer-content&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;subtitle-small text-height-14 text-color-bbbbbb text-hover-to-white js-pointer-small&quot;&gt;email@umaya_agency.com&lt;/a&gt;&lt;br&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;subtitle-small text-height-14 text-color-bbbbbb text-hover-to-white js-pointer-small&quot;&gt;email@umaya_job.com&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- column end --&gt;
+                &lt;!-- column start --&gt;
+                &lt;div class=&quot;four-columns column-50-100 padding-top-60 footer-address&quot;&gt;
+                    &lt;div class=&quot;column-l-r-margin-10&quot;&gt;
+                        &lt;div class=&quot;title-xxxxs text-bg-red footer-info&quot;&gt;Address&lt;/div&gt;
+                        &lt;div class=&quot;margin-top-10&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;subtitle-small text-height-14 text-color-bbbbbb text-hover-to-white js-pointer-small&quot;&gt;
+                                PO Box 223158 Oliver Street&lt;br&gt;
+                                East Victoria 2006 UK
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- column end --&gt;
+                &lt;!-- column start --&gt;
+                &lt;div class=&quot;four-columns column-50-100 padding-top-60 footer-phone&quot;&gt;
+                    &lt;div class=&quot;column-l-r-margin-10&quot;&gt;
+                        &lt;div class=&quot;title-xxxxs text-bg-red footer-info&quot;&gt;Phone&lt;/div&gt;
+                        &lt;div class=&quot;margin-top-10 footer-content&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;subtitle-small text-height-14 text-color-bbbbbb text-hover-to-white js-pointer-small&quot;&gt;+23 8 8532 7834&lt;/a&gt;&lt;br&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;subtitle-small text-height-14 text-color-bbbbbb text-hover-to-white js-pointer-small&quot;&gt;+23 8 9635 7335&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- column end --&gt;
+            &lt;/div&gt;&lt;!-- flex-container end --&gt;
+
+            &lt;!-- footer-social start --&gt;
+            &lt;ul class=&quot;footer-social list list_center padding-top-90&quot;&gt;
+                &lt;li class=&quot;list__item&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-text=&quot;Facebook&quot;&gt;Facebook&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;list__item&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-text=&quot;Dribbble&quot;&gt;Dribbble&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;list__item&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-text=&quot;Instagram&quot;&gt;Instagram&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;list__item&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-text=&quot;Youtube&quot;&gt;Youtube&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;list__item&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-text=&quot;Behance&quot;&gt;Behance&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;list__item&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-text=&quot;Twitter&quot;&gt;Twitter&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;&lt;!-- footer-social end --&gt;
+
+            &lt;!-- footer-copyright start --&gt;
+            &lt;div class=&quot;footer-copyright text-center pos-abs pos-bottom-center&quot;&gt;
+                &lt;p class=&quot;title-small-thin&quot;&gt;
+                    &copy; Copyright 2020 UMAYA. Template by &lt;a href=&quot;#&quot; class=&quot;text-weight-600&quot;&gt;Jinna Gik&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;&lt;!-- footer-copyright end --&gt;
+        &lt;/div&gt;&lt;!-- container end --&gt;
+    &lt;/div&gt;&lt;!-- lines-container end --&gt;
+&lt;/footer&gt;&lt;!-- footer end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">GRID</h4>
+			<p class="body-text-s text-color-black">GRID structure:</p>
+	<pre class="prettyprint linenums">
+&lt;div class=&quot;flex-container&quot;&gt;
+    &lt;div class=&quot;two-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+    &lt;div class=&quot;three-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+    &lt;div class=&quot;four-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+    &lt;div class=&quot;three-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</section>
+
+		<section id="css" class="padding-top-120 container">
+			<div class="text-center">
+				<h4 class="headline-xs text-color-black">2. CSS files</h4>
+				<p class="body-text-s text-color-black margin-top-10">Main css files like style.css are located in css folder.</p>
+			</div>
+	<pre class="prettyprint">
+<span class="pln">assets</span><span class="pun">/</span><span class="pln"></span>
+    <span class="pun">├──</span><span class="pln"> css</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> plugins.css</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> style.css</span>
+    <span class="pun">├──</span><span class="pln"> images</span>
+    <span class="pun">├──</span><span class="pln"> js</span>
+    <span class="pun">├──</span><span class="pln"> webfonts</span>
+</pre>
+			<p class="body-text-s text-color-black padding-top-30 text-center">File <span class="text-color-red">/assets/css/style.css</span> contains all stylings for the template. At the begining of the file is a table of contents. This is a place where you can edit styling. I suggest you overide default template style at the end of this file.</p>
+	<pre class="prettyprint linenums">
+/* ==========================================================================
+
+   Table of content:
+
+   1. Basics
+   2. Helpers
+      2.1. Border radius
+      2.2. Width & height
+      2.3. Z-index
+      2.4. Background cover
+      2.5. Display settings
+      2.6. Paddings & margins
+      2.7. Positions
+      2.8. Borders
+      2.9. Parallax background
+      2.10. Video background
+   3. Container width
+   4. Flex grid
+      4.1. Flex column margins
+   5. Min-height flex center (IE11-fix)
+   6. Lines settings
+   7. Animsition preloader
+      7.1. Preloader in/out
+      7.2. Preloader blocks
+      7.3. Preloader loading logo box
+      7.4. Preloader pulse animation
+   8. Custom mouse cursor
+   9. Header
+      9.1. Header logo
+      9.2. Navigation open button
+      9.3. Navigation close button
+      9.4. Header social buttons
+      9.5. Header contact
+      9.6. Headroom
+   10. Navigation
+      10.1. Navigation menu box
+      10.2. Navigation buttons
+         10.2.1. Navigation active buttons
+         10.2.2. Navigation active page out buttons
+         10.2.3. Navigation buttons style
+         10.2.4. Navigation buttons hover effect
+      10.3. Navigation drop down
+         10.3.1. Navigation drop down close button
+         10.3.2. Navigation drop down menu
+      10.4. Navigation slider
+         10.4.1. Navigation slider background
+         10.4.2. Navigation slider background overlay
+         10.4.3. Navigation slider controls
+         10.4.4. Navigation slider buttons delays
+      10.5. Navigation information
+         10.5.1. Navigation information animations
+      10.6. Landing navigation
+   11. Footer
+      11.1. Footer logo
+      11.2. Footer title & navigation
+      11.3. Footer information
+      11.4. Footer social
+      11.5. Footer copyright
+   12. Magnific popup
+      12.1. Popup counter
+      12.2. Popup close button
+   13. Swiper & popup arrows
+      13.1. Popup arrows
+      13.2. Swiper arrows
+      13.3. Swiper & popup arrows animations
+   14. Swiper pagination
+      14.1. Dynamic pagination
+      14.2. Counter pagination
+         14.2.1. Counter pagination vertical
+      14.3. Dots pagination
+         14.3.1. Dots pagination vertical
+   15. Swiper sliders
+   16. Scroll to buttons
+      16.1. To top button
+      16.2. Scroll down button
+   17. Buttons
+      17.1. Skew button
+      17.2. Overlay button
+      17.3. Background button
+      17.4. Border button
+      17.5. Icon overlay button
+      17.6. Icon shadow button
+      17.7. Fill button
+      17.8. Flip button
+      17.9. Ellipse button
+      17.10. Play button
+   18. Typography
+      18.1. Titles
+      18.2. Subtitles
+      18.3. Quote
+      18.4. Vertical text
+      18.5. Description
+      18.6. Fontawesome icon
+   19. Animations
+      19.1. Animation delays
+      19.2. Image scale animation
+      19.3. Image reveal animation
+      19.4. Text reveal animation
+      19.5. Fade animation
+      19.6. Slide animation
+      19.7. Text fill animation
+      19.8. Overlay animation
+      19.9. Reveal animation
+      19.10. Text double fill animation
+      19.11. Progress bar
+      19.12. Border animations
+         19.12.1. Border left animation
+         19.12.2. Border right animation
+         19.12.3. Border top animation
+         19.12.4. Border bottom animation
+   20. Content hover effects
+      20.1. Content hover delays
+      20.2. Fade hover
+      20.3. Slide hover
+      20.4. Text fill hover
+      20.5. Reveal hover
+      20.6. Move hover
+   21. Image hover effects
+      21.1. Image hover opacity
+      21.2. Image hover scale
+      21.3. Image hover overlay
+   22. Forms
+      22.1. Form placeholder
+      22.2. Input default
+      22.3. Input with border
+      22.4. Search form
+   23. Post comments
+   24. List styles
+      24.1. List item
+         24.1.1. List item margins
+         24.1.2. List item icons
+      24.2. List counter
+   25. Isotope grid
+   26. Accordion
+      26.1. Accordion button
+      26.2. Accordion button icon
+      26.3. Accordion underline
+      26.4. Accordion left/right borders
+   27. Typewriter
+   28. Particles
+   29. Background overlay
+   30. Avatars & Logos
+      30.1. Awards logo
+      30.2. Testimonials author
+      30.3. Author avatar
+      30.4. Clients logo
+         30.4.1. Clients logo animation
+         30.4.2. Clients logo with lines
+         30.4.3. Clients logo with borders
+   31. Colors
+      31.1. Background colors
+      31.2. Text colors
+      31.3. Text hover colors
+
+   ========================================================================== */
+</pre>
+			<p class="body-text-s text-color-black padding-top-30 text-center">If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+	<pre class="prettyprint linenums">
+/* ==========================================================================
+   10. Navigation
+   ========================================================================== */
+
+.nav-container {
+    overflow: hidden;
+    width: 100%;
+    height:     100vh;
+    min-height: 100vh;
+    margin:  0;
+    padding: 0;
+    position: fixed !important;
+    left: 0;
+    top:  0;
+    z-index: 9;
+    pointer-events: none;
+    background-color: #f5f5f5;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transition: 1s cubic-bezier(.858, .01, .068, .99);
+         -o-transition: 1s cubic-bezier(.858, .01, .068, .99);
+            transition: 1s cubic-bezier(.858, .01, .068, .99);
+    -webkit-transition-delay: .7s;
+         -o-transition-delay: .7s;
+            transition-delay: .7s;
+}
+
+.js-nav-active .nav-container {
+    pointer-events: auto;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
+}
+</pre>
+		</section>
+
+		<section id="javascript" class="padding-top-120 container">	
+			<div class="text-center">
+				<h4 class="headline-xs text-color-black">3. JavaScript</h4>
+				<p class="body-text-s text-color-black margin-top-10">This template imports several Javascript files from plugins folder.</p>
+			</div>
+	<pre class="prettyprint">
+<span class="pln">assets</span><span class="pun">/</span><span class="pln"></span>
+    <span class="pun">├──</span><span class="pln"> css</span>
+    <span class="pun">├──</span><span class="pln"> images</span>
+    <span class="pun">├──</span><span class="pln"> js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> footer-reveal_init.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> footer-reveal.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> main.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> particles_init.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> particles.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> plugins.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> typewriter_init.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> typewriter.js</span>
+    <span class="pun">├──</span><span class="pln"> webfonts</span>
+</pre>
+
+			<p class="body-text-s text-color-black padding-top-30 text-center">main.js scripts contain function, plugins initialize and handle javascript event. For example:</p>
+
+	<pre class="prettyprint linenums">
+$(function() {
+    &quot;use strict&quot;;
+
+    $(document).ready(function() {
+
+        /* 2. Animsition preloader */
+        $(&quot;.js-animsition-overlay&quot;).animsition({
+            inClass: 'overlay-slide-in-right',
+            outClass: 'overlay-slide-out-right',
+            inDuration: 1,
+            outDuration: 1500,
+            linkElement: '.js-animsition-link',
+            // e.g. linkElement: 'a:not([target=&quot;_blank&quot;]):not([href^=&quot;#&quot;])'
+            loading: false,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '&lt;img src=&quot;loading.svg&quot; /&gt;'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // &quot;browser&quot; option allows you to disable the &quot;animsition&quot; in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the &quot;animsition&quot; in a browser that does not support &quot;animation-duration&quot;.
+            overlay : true,
+            overlayClass : 'js-animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+
+        ...
+
+    });
+
+    ...
+
+});
+</pre>
+		</section>
+
+		<section id="credits" class="container padding-top-120 padding-bottom-90">
+			<h4 class="headline-xs text-color-black text-center">4. Credits</h4>
+			<h4 class="headline-xxxs text-color-black padding-top-60">PLUGINS</h4>
+
+			<table class="text-color-black">
+				<thead>
+					<tr>
+						<th>Plugin Name</th>
+						<th>Version</th>
+						<th>Documentation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="doc-bg">
+						<td>Swiper</td>
+						<td>5.4.1</td>
+						<td><a href="https://swiperjs.com/api/" target="_blank">Swiper</a></td>
+					</tr>
+					<tr>
+						<td>Footer Reveal</td>
+						<td>-</td>
+						<td><a href="http://iainandrew.github.io/footer-reveal/" target="_blank">Footer Reveal</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>ScrollMagic</td>
+						<td>2.0.5</td>
+						<td><a href="http://scrollmagic.io/docs/" target="_blank">ScrollMagic</a></td>
+					</tr>
+					<tr>
+						<td>jQuery</td>
+						<td>2.2.0</td>
+						<td><a href="http://jquery.com/" target="_blank">jQuery</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Headroom</td>
+						<td>0.9.4</td>
+						<td><a href="http://wicky.nillia.ms/headroom.js" target="_blank">Headroom</a></td>
+					</tr>
+					<tr>
+						<td>Page scroll to id</td>
+						<td>1.5.9</td>
+						<td><a href="http://manos.malihu.gr/page-scroll-to-id/" target="_blank">Page scroll to id</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Magnific Popup</td>
+						<td>1.1.0</td>
+						<td><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a></td>
+					</tr>
+					<tr>
+						<td>Midnight</td>
+						<td>1.1.1</td>
+						<td><a href="http://aerolab.github.io/midnight.js/" target="_blank">Midnight</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Animsition</td>
+						<td>4.0.2</td>
+						<td><a href="http://blivesta.github.io/animsition" target="_blank">Animsition</a></td>
+					</tr>
+					<tr>
+						<td>Normalize.css</td>
+						<td>8.0.1</td>
+						<td><a href="https://github.com/necolas/normalize.css" target="_blank">Normalize</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Font Awesome</td>
+						<td>5.5.0</td>
+						<td><a href="https://fontawesome.com" target="_blank">Font Awesome</a></td>
+					</tr>
+					<tr>
+						<td>Isotope</td>
+						<td>3.0.6</td>
+						<td><a href="https://isotope.metafizzy.co" target="_blank">Isotope</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Typewriter JS</td>
+						<td>2</td>
+						<td><a href="https://safi.me.uk/typewriterjs/" target="_blank">Typewriter JS</a></td>
+					</tr>
+					<tr>
+						<td>Particles js</td>
+						<td>2.0.0</td>
+						<td><a href="https://vincentgarreau.com/particles.js/" target="_blank">Particles js</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="body-text-s text-color-black padding-top-30 text-center">Template used the following images and fonts as listed.</p>
+			<table class="text-color-black">
+				<thead>
+					<tr class="doc-bg">
+						<th>Source Name</th>
+						<th>Source Url</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Pexels</td>
+						<td><a href="https://www.pexels.com/" target="_blank">www.pexels.com</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Google Fonts</td>
+						<td><a href="https://fonts.google.com/" target="_blank">fonts.google.com</a></td>
+					</tr>
+                    <tr class="doc-bg">
+                        <td>Unsplash</td>
+                        <td><a href="https://unsplash.com" target="_blank">unsplash.com</a></td>
+                    </tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="support" class="padding-top-bottom-120 doc-bg">
+			<div class="container text-center">
+				<h4 class="headline-xs text-color-black">5. Support</h4>
+				<p class="body-text-m text-color-black margin-top-30">Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. I'll do my best to assist. If you have a more general question relating to the templates on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+			</div>
+		</section>
+
+		<!-- Javascript -->
+		<script src="../Umaya/assets/js/plugins.js"></script>
+		<script src="js/prettify.js"></script>
+		<script src="js/theme.js"></script>
+	</body>
+</html>
